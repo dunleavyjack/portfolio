@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.parent-node {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
