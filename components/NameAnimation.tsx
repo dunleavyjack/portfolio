@@ -1,14 +1,12 @@
 /* eslint-disable @next/next/no-sync-scripts*/
 import React from 'react';
 import { useNameAnimtion } from '../hooks/useNameAnimation';
-import Image from 'next/image';
 
 const AnimatedName: React.FC = () => {
-    // Custom hook for starting the name animation
-    useNameAnimtion();
+    useNameAnimtion(); // Custom hook for starting the name animation
 
     return (
-        <div id="top" className="parent-node" style={{ height: '100vh' }}>
+        <div id="top" className="parent-node">
             <div className="reference-node"></div>
         </div>
     );
