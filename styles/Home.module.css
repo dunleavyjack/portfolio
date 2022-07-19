@@ -1,16 +1,5 @@
-.intro{
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.scrollText{
+.instruction{
+  font-family: 'Poppins', sans-serif;
   font-style: 'light';
   font-weight: 700;
   position: absolute;
@@ -18,12 +7,105 @@
   color: #D3D3D3;
   animation: fadeIn 1.5s;
   font-size: medium;
-  /* animation-delay: 1s;
-  animation-duration: 1s; */
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    background-color: #008060;
+    padding: 100px;
+    height: 100vh;
+    justify-content: space-between;
 }
 
 @keyframes fadeIn { 
 0% { opacity: 0; }
 66% { opacity: 0; }
 100% { opacity: 1; }
+}
+
+.title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.description{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.linkContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+
+.link{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-size: 25px;
+  background-color: #679BF7;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  width: 175px;
+  height: 47px;
+  line-height: 41px;
+  margin: 8px 8px 8px 0px;
+}
+
+.link:hover{
+  background-color: #000000;
+  color: #D3D3D3;
+}
+
+.loops{
+  margin: 8px 8px 8px 0px;
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 1000px){
+  .linkContainer{
+    width: 400px
+  }
+}
+
+@media screen and (max-width: 600px){
+  .page{
+    padding: 40px 20px;
+  }
+  .title{
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .description{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .link-container{
+    justify-content: center;
+    margin: 4px;
+  }
+  .link{
+    font-size: 20px;
+    margin: 4px 4px 4px 0px;
+  }
+  .loops{
+    margin: 4px 4px 4px 0px;
+  }
 }
