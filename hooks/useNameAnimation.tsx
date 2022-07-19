@@ -4,7 +4,7 @@ export const useNameAnimtion = () => {
     useEffect(() => {
         /**
          *
-         * !Important. I'm still working on the types declarations in this file.
+         * ! Important. I'm still working on types declarations in this file.
          *
          * Both the animation below and font come from a custom sans-serif font and animation system
          * called Leon Sans that was created by Jongmin Kim, whose work is absolutely incredible: https://leon-kim.com/
